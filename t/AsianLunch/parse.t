@@ -6,12 +6,8 @@ use Encode;
 
 use Test::Base;
 plan tests => 1 + 1 * blocks;
-use Data::Dumper;
 
-BEGIN {
-    use_ok('AsianLunch');
-};
-
+use_ok('AsianLunch');
 
 sub parse {
     my $input = shift;
