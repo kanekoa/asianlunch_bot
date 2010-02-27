@@ -12,6 +12,6 @@ my $config = Config::Pit::set("asianlunch_bot", config => {
     gmail_password   => "password on gmail"
 });
 
-print "please set \$EDITOR\n" unless $config;
+print "please set \$EDITOR\n" unless scalar keys %$config;
 
 exit;
